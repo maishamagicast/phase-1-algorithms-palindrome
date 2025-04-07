@@ -4,6 +4,11 @@ function isPalindrome(word) {
 
 /* 
   Add your pseudocode here
+x is word and y is word reversed
+  if x === y return true
+  else return false
+
+
 */
 
 /*
@@ -23,3 +28,14 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+function isPalindrome(word){
+  let reversedWord= word.split('').reverse().join('');
+  if (word === reversedWord){
+    return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
